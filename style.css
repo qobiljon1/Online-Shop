@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.row {
+  margin: auto;
+}
+.col-auto {
+  margin: 15px auto;
+}
+
+/* ======================== nav start=================== */
+.navbar {
+  width: 100%;
+  height: 9%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  margin-bottom: 35px;
+  background: rgb(245, 244, 244);
+}
+.navbar .navbar-brand {
+  color: red;
+}
+.navbar-nav .nav-item .btn {
+  border: none;
+}
+.navbar-nav .nav-item .btn:hover {
+  background: rgb(196, 192, 192);
+}
+.navbar-nav .nav-item .btn .fa {
+  color: red;
+}
+.navbar-nav .nav-item .btn a {
+  text-decoration: none;
+  color: black;
+}
+.navbar-nav .nav-item .btn:hover a {
+  color: red;
+}
+.navbar-nav .nav-item .btn sup {
+  color: red;
+  font-size: 12px;
+}
+
+/* ======================== nav end=================== */
+
+.card_list {
+  margin-top: 65px;
+}
+.card {
+  position: relative;
+  height: 400px;
+  padding: 10px;
+}
+.card img {
+  height: 150px;
+  width: 100%;
+}
+.card-body h5 {
+  font: 550 20px sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.card-body h6 {
+  font: 500 16px Arial;
+  color: black;
+  margin-top: 25px;
+  background: white;
+}
+.card-body p {
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+}
+.card button {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+}
+
+/* ============================================ AddCard ======================================== */
+
+.addCard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  background: white;
+  display: none;
+  width: 100%;
+  z-index: 3;
+  height: 100vh;
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+.math {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-item {
+  border: 1px solid rgba(128, 128, 128, 0.26);
+  border-radius: 10px;
+  padding: 20px;
+}
+.addCard h1 {
+  font: bold 40px Arial;
+  margin-bottom: 55px;
+}
+
+.show_Card {
+  background: white;
+  width: 80%;
+  margin: 45px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.show_Card i {
+  color: red;
+  font-size: 35px;
+}
+.show_Card a {
+  text-decoration: none;
+  color: black;
+  font: 500 35px Arial;
+}
+.show_Card sup {
+  color: red;
+  font-weight: 550;
+  font-size: 26px;
+}
+.show_Card h2 i {
+  font-size: 25px !important;
+  cursor: pointer;
+  color: red;
+}
+
+.card-item img {
+  margin-left: -10px;
+  padding: 8px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(128, 128, 128, 0.288);
+}
+.card-item .info .info_name {
+  margin-left: 15px;
+}
+.card-item span {
+  display: block;
+  font-size: 16px;
+  color: rgba(128, 128, 128, 0.616);
+  font-weight: 500;
+  font-family: "Roboto";
+}
+.card-item a {
+  font: 600 14px Arial;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+.card-item a:hover {
+  color: red;
+}
+.math button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+  background: white;
+  color: rgba(128, 128, 128, 0.76);
+}
+.math button .fa {
+  line-height: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500 !important;
+}
+.btn_input {
+  display: flex;
+  align-items: center;
+}
+.btn_input .control {
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+  background: white;
+  text-align: center;
+  font: 700 16px Arial;
+  color: rgba(0, 0, 0, 0.6);
+}
+.btn_input button:nth-child(1) {
+  border-radius: 5.5px 0 0 5.5px;
+  border: 1px solid rgba(128, 128, 128, 0.082);
+  background: rgba(128, 128, 128, 0.082);
+}
+
+.btn_input button:nth-child(1):hover {
+  border: 1px solid rgba(128, 128, 128, 0.89);
+}
+.btn_input button:nth-child(3) {
+  border: 1px solid rgba(128, 128, 128, 0.329);
+  border-radius: 0px 5.5px 5.5px 0px;
+  background: rgba(128, 128, 128, 0.082);
+}
+
+.btn_input button:nth-child(3):hover {
+  border: 1px solid rgba(128, 128, 128, 0.89);
+}
+.math .price {
+  color: black;
+  font: 700 16px Arial;
+}
+.fa-times {
+  font-size: 20px !important;
+}
+.delete .fa-times:hover {
+  color: red;
+}
+.total_amount {
+  position: fixed;
+  top: 20%;
+  right: 15%;
+  width: 15%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+.total_amount h2 {
+  color: red;
+}
+.total_amount span {
+  font: 550 20px Arial;
+}
